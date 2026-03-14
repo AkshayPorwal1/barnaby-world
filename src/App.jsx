@@ -376,7 +376,7 @@ export default function App() {
                 <div className="relative z-10 rounded-jungle-lg overflow-hidden border-[16px] border-white shadow-2xl transition-all duration-1000">
                   <img
                     src="01.png"
-                    alt="Barnaby and Daisy"
+                    alt="Barnaby the Pygmy Hippo and Daisy the Lamb playing in the Jolly Jungle, representing low stimulation and high warmth entertainment"
                     className="w-full h-auto object-cover transform scale-100 hover:scale-105 transition-transform duration-700"
                   />
                 </div>
@@ -401,14 +401,16 @@ export default function App() {
             <div className="grid md:grid-cols-2 gap-10">
               <div className="p-16 bg-teal-50 rounded-jungle-lg space-y-8 flex flex-col justify-center border-4 border-white shadow-xl shadow-teal-50/50">
                 <h3 className="text-4xl font-bold text-teal-700 italic font-heading">Our World Rules</h3>
-                <p className="text-teal-900/60 leading-relaxed text-xl font-medium italic">"Gentle optimism. No sarcasm, no loud sudden noises, just high warmth and soft, tactile textures."</p>
+                <blockquote className="text-teal-900/60 leading-relaxed text-xl font-medium italic border-l-4 border-teal-200 pl-4 py-1">
+                  "Gentle optimism. No sarcasm, no loud sudden noises, just high warmth and soft, tactile textures."
+                </blockquote>
                 <div className="flex gap-4">
                   <div className="px-5 py-2 bg-teal-100 text-teal-600 rounded-full text-xs font-bold font-heading">LOW STIM</div>
                   <div className="px-5 py-2 bg-teal-100 text-teal-600 rounded-full text-xs font-bold font-heading">HIGH WARMTH</div>
                 </div>
               </div>
               <div className="rounded-jungle-lg overflow-hidden border-8 border-white shadow-2xl h-[400px]">
-                <img src="03.png" alt="Pond scene" className="w-full h-full object-cover" />
+                <img src="03.png" alt="A relaxing pond scene in Barnaby's World Jolly Jungle, highlighting soft pastel aesthetics" className="w-full h-full object-cover" />
               </div>
             </div>
           </section>
@@ -461,13 +463,13 @@ export default function App() {
 
             <div className="columns-1 md:columns-2 gap-12 space-y-12">
               <div className="break-inside-avoid rounded-jungle-lg overflow-hidden border-[12px] border-white shadow-2xl hover:rotate-1 transition-all duration-500">
-                <img src="03.png" alt="Pond" className="w-full" />
+                <img src="03.png" alt="Peaceful pond in the Jolly Jungle from Barnaby's World" className="w-full" />
               </div>
               <div className="break-inside-avoid rounded-jungle-lg overflow-hidden border-[12px] border-white shadow-2xl hover:-rotate-1 transition-all duration-500">
-                <img src="02.png" alt="Playtime" className="w-full" />
+                <img src="02.png" alt="Barnaby, Tula, and friends during quiet playtime in the Jolly Jungle" className="w-full" />
               </div>
               <div className="break-inside-avoid rounded-jungle-lg overflow-hidden border-[12px] border-white shadow-2xl hover:rotate-1 transition-all duration-500">
-                <img src="01.png" alt="Meadow" className="w-full" />
+                <img src="01.png" alt="A soft sunlit meadow showing the low stimulation environment of Barnaby's World" className="w-full" />
               </div>
               <div className="break-inside-avoid p-16 bg-purple-50 rounded-jungle-lg border-4 border-white shadow-2xl space-y-8 text-center flex flex-col items-center">
                 <div className="w-20 h-20 bg-white rounded-full flex items-center justify-center shadow-lg text-purple-400">
