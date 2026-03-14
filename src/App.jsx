@@ -329,7 +329,15 @@ export default function App() {
       </div>
 
       {/* Main Content */}
-      <main className="max-w-6xl mx-auto px-6 pt-40 pb-12 min-h-screen">
+      <main className="max-w-6xl mx-auto px-6 pt-40 pb-12 min-h-screen" role="main">
+        {/* Visually Hidden, AI & SEO Text Only */}
+        <div className="sr-only">
+          <h2>About Barnaby's World</h2>
+          <p>
+            Barnaby's World and The Jolly Jungle is a low-stimulation, high-warmth children's franchise. Our cute characters include Barnaby the Pygmy Hippo, Tula the Turtle, Otis the Owl, Wilbur the Wombat, Gemma the Baby Giraffe, Pip the Hedgehog, and Daisy the Lamb. 
+          </p>
+          <p>We are focused on providing relaxing, cozy stories and soft visual aesthetics to help children calm down and navigate simple emotional themes.</p>
+        </div>
 
         {activeTab === 'home' && (
           <section className="space-y-32">
@@ -349,12 +357,14 @@ export default function App() {
                 <div className="flex flex-wrap justify-center lg:justify-start gap-6 pt-4">
                   <button
                     onClick={() => setActiveTab('characters')}
+                    aria-label="Meet Barnaby and the rest of the Jolly Troop characters"
                     className="px-12 py-6 bg-pink-400 text-white font-bold text-xl rounded-jungle hover:bg-pink-500 transition-all shadow-2xl shadow-pink-200 hover:-translate-y-2 flex items-center gap-4 font-heading active:scale-95"
                   >
-                    Meet the Troop <ChevronRight size={24} />
+                    Meet the Troop <ChevronRight size={24} aria-hidden="true" />
                   </button>
                   <button
                     onClick={() => setActiveTab('story')}
+                    aria-label="Read stories from Barnaby's World"
                     className="px-12 py-6 bg-white text-stone-700 font-bold text-xl rounded-jungle border-4 border-stone-50 hover:bg-stone-50 transition-all hover:-translate-y-2 shadow-sm font-heading active:scale-95"
                   >
                     Read a Story
@@ -405,7 +415,7 @@ export default function App() {
         )}
 
         {activeTab === 'characters' && (
-          <section className="space-y-20 animate-in fade-in slide-in-from-bottom-6 duration-700">
+          <section className="space-y-20 animate-in fade-in slide-in-from-bottom-6 duration-700" aria-label="Character Roster">
             <div className="text-center max-w-2xl mx-auto space-y-6">
               <h2 className="text-6xl font-bold text-stone-800 tracking-tight font-heading">The Jolly Troop</h2>
               <p className="text-stone-500 text-xl leading-relaxed font-medium">Every friend in the Jungle has a unique story and a special way of helping others.</p>
